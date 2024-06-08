@@ -4,8 +4,8 @@ import Data.Char (toUpper)
 type Objeto = Barbaro -> Barbaro
 
 data Barbaro = UnBarbaro {
-    nombre :: String,
-    fuerza :: Int,
+    nombre      :: String,
+    fuerza      :: Int,
     habilidades :: [String],
     objetos     :: [Objeto]
 } deriving Show
@@ -13,26 +13,26 @@ data Barbaro = UnBarbaro {
 {-Barbaros-}
 dave :: Barbaro
 dave = UnBarbaro {
-    nombre = "Dave",
-    fuerza = 100,
+    nombre      = "Dave",
+    fuerza      = 100,
     habilidades = ["tejer", "EscribirPoesia"],
-    objetos = [megafono, varitasDefectuosas]
+    objetos     = [megafono, varitasDefectuosas]
 }
 
 faffy :: Barbaro
 faffy = UnBarbaro {
-    nombre = "Faffy",
-    fuerza = 40,
+    nombre      = "Faffy",
+    fuerza      = 40,
     habilidades = ["robar", "Escribir Poesia Atroz"],
-    objetos = []
+    objetos     = []
 }
 
 astro :: Barbaro
 astro = UnBarbaro {
-    nombre = "Astro",
-    fuerza = 100,
+    nombre      = "Astro",
+    fuerza      = 100,
     habilidades = ["Amortiguar", "Escribir Poesia Atroz"],
-    objetos = []
+    objetos     = []
 }
 
 {-Barbaros-}
@@ -151,3 +151,4 @@ descendientes barbaro = iterate descendiente barbaro
 
 {-Se podrían aplicar sinRepetidos solo al nombre del barbaro 
 ya que los objetos no son comparables entre si por ser funciones-}
+{-Punto 4-}
